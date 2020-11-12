@@ -1,8 +1,23 @@
 # React Store App (React: 16.14.0)
+#### Repo cloned from [react-store-05](https://github.com/tom2kota/react-store-05)
+Develop React e-commerce project with:
+- Stripe payment (test mode)
+- Firebase Authentication 
+- User Data storage in Cloud Firestore 
+- Reselect library 
+- Redux 
+- Redux persist
+- Formcarry contact form
+
+TODO:
+- remove Redux 
+- remove Redux persist
+- remove Reselect
+- add GraphQl
 
 E-commerce project DEMO:
-- [Client](https://react-store-05.vercel.app)
-- [Server](https://react-store-express-server.herokuapp.com) or [Clone repo & run server on localhost](https://github.com/tom2kota/react-store-server)
+- [Client](https://react-store-11.vercel.app)
+- [Server]() or [Clone repo & run server on localhost]()
 - [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard)
 - [Firebase](https://console.firebase.google.com)
 
@@ -20,8 +35,13 @@ Go to [localhost:3000](http://localhost:3000)
 
 ---------------
 
-#### Redux workflow scheme
+#### Redux workflow scheme (to replace with GraphQl)
 ![img](./public/redux.png)
+
+---------------
+
+#### GraphQl workflow scheme
+![img](./public/graphql.png)
 
 ---------------
 
