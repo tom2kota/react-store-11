@@ -2,7 +2,7 @@
   "name": "react-store-11",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://crwn-clothing.com",
+  "proxy": "https://react-store-11.vercel.app",
   "dependencies": {
     "@apollo/client": "^3.2.5",
     "@formcarry/react": "^1.0.2",
