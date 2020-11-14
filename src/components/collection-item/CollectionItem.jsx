@@ -12,7 +12,7 @@ const CollectionItem = ({item, addItem}) => {
                 <span className='name'>{name}</span>
                 <span className='price'>${price}</span>
             </div>
-            <CustomButton onClick={() => addItem(item)}>Add 2 Cart</CustomButton>
+            <CustomButton onClick={() => addItem(item)} inverted>Add 2 Cart</CustomButton>
         </div>
     )
 }

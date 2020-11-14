@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
-import * as serviceWorker from './serviceWorker';
 import {GlobalStyle} from "./globalStyles";
-import {Provider} from 'react-redux';
-import {store, reduxPersist} from "./redux/store";
-import {PersistGate} from "redux-persist/integration/react";
 // import {ApolloClient, createHttpLink, InMemoryCache} from "@apollo/client";
 // import {ApolloProvider} from "react-apollo";
 import {ApolloProvider} from 'react-apollo';
@@ -50,17 +46,11 @@ client.writeData({data});
 ReactDOM.render(
     <ApolloProvider client={client}>
         <React.StrictMode>
-            <Provider store={store}>
-                <BrowserRouter>
-                    <GlobalStyle/>
-                    <PersistGate persistor={reduxPersist}>
-                        <AppContainer/>
-                    </PersistGate>
-                </BrowserRouter>
-            </Provider>
+            <BrowserRouter>
+                <GlobalStyle/>
+                <AppContainer/>
+            </BrowserRouter>
         </React.StrictMode>
     </ApolloProvider>
     , document.getElementById('root')
 );
-
-serviceWorker.unregister();
