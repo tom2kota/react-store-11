@@ -1,5 +1,5 @@
 import React from "react";
-import CollectionItem from "../../components/collection-item/CollectionItem";
+import CollectionItemContainer from "../../components/collection-item/CollectionItemContainer";
 import './CollectionPage.scss'
 
 const CollectionPage = ({collection}) => {
@@ -10,7 +10,11 @@ const CollectionPage = ({collection}) => {
             <h1>collection page</h1>
             <h2 className='title'>{title}</h2>
             <div className='items'>
-                {items.map(item => (<CollectionItem key={item.id} item={item}/>))}
+
+                {items.map(item =>
+                    <CollectionItemContainer key={item.id} item={item}/>
+                )}
+
             </div>
         </div>
     )

@@ -12,7 +12,7 @@ const CollectionPreview = ({title, items, history, match}) => (
         <div className='preview'>
             {items
                 .filter((item, idx) => idx < 3)
-                .map((item) =>
+                .map(item =>
                     <CollectionItemContainer key={item.id} item={item}/>
                 )}
         </div>

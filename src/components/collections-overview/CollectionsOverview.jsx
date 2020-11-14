@@ -5,9 +5,15 @@ import './CollectionsOverview.scss';
  const CollectionsOverview = ({collections}) => (
     <div className='collections-overview'>
         <h1>collection overview</h1>
+
         {collections.map(
-            ({id, ...otherCollectionProps}) => <CollectionPreview key={id} {...otherCollectionProps} />
+            ({id, ...otherCollectionProps}) =>
+                <CollectionPreview
+                    key={id}
+                    {...otherCollectionProps}
+                />
         )}
+
     </div>
 )
 
