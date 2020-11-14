@@ -1,12 +1,12 @@
 import React from "react";
-import {HeaderContainer, LogoContainer, OptionsContainer, OptionsLink} from './headerStyles';
+import {HeaderContainerStyle, LogoContainer, OptionsContainer, OptionsLink} from './headerStyles';
 import {auth} from '../../firebase/firebase.utils';
 import imgLogo from '../../images/logo192.png'
 import CartIconContainer from "../cart-icon/CartIconContainer";
 import CartDropdownContainer from "../cart-dropdown/CartDropdownContainer";
 
 const Header = ({currentUser, hidden}) => (
-    <HeaderContainer>
+    <HeaderContainerStyle>
 
         <LogoContainer to='/'>
             <img src={imgLogo} alt='Logo'/>
@@ -35,8 +35,8 @@ const Header = ({currentUser, hidden}) => (
             }
             <CartIconContainer/>
         </OptionsContainer>
-        {hidden ? null : <CartDropdownContainer/>}
-    </HeaderContainer>
+        {hidden ? null : (<CartDropdownContainer/>)}
+    </HeaderContainerStyle>
 )
 
-export default  Header
+export default Header

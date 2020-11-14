@@ -45,12 +45,10 @@ client.writeData({data});
 
 ReactDOM.render(
     <ApolloProvider client={client}>
-        <React.StrictMode>
-            <BrowserRouter>
-                <GlobalStyle/>
-                <AppContainer/>
-            </BrowserRouter>
-        </React.StrictMode>
+        <BrowserRouter>
+            <GlobalStyle/>
+            <AppContainer/>
+        </BrowserRouter>
     </ApolloProvider>
     , document.getElementById('root')
 );
