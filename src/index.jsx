@@ -19,12 +19,11 @@ const enhancedFetch = (url, init) => {
             ...init.headers,
             'Access-Control-Allow-Origin': '*',
         },
-    }).then(response => response)
+    }).then(response => console.log('/\/\/\/ ', response))
 }
 
 const httpLink = createHttpLink({
     uri: 'https://crwn-clothing.com',
-    credentials: 'same-origin',
     fetchOptions: {
         mode: 'cors',
     },
