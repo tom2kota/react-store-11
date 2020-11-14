@@ -3,9 +3,9 @@ import {withRouter} from 'react-router-dom';
 import CollectionItemContainer from "../collection-item/CollectionItemContainer";
 import './CollectionPreview.scss';
 
-const CollectionPreview = ({title, items, history, match, routeName}) => (
+const CollectionPreview = ({title, items, history, match}) => (
     <div className='collection-preview'>
-        <h1 className='title' onClick={() => history.push(`${match.path}/${routeName}`)}>
+        <h1 className='title' onClick={() => history.push(`${match.path}/${title.toLowerCase()}`)}>
             {title.toUpperCase()}
         </h1>
         <div className='preview'>
