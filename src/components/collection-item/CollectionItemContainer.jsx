@@ -17,6 +17,6 @@ const CollectionItemContainer = props => (
             />
         )}
     </Mutation>
-);
+)
 
 export default CollectionItemContainer
