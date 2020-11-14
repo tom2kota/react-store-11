@@ -6,6 +6,7 @@ import './ShopPage.scss';
 
 const ShopPage = ({match}) => (
     <div className='shop-page'>
+        <h1>shop page</h1>
         <Route exact path={`${match.path}`} component={CollectionsOverviewContainer}/>
         <Route path={`${match.path}/:collectionId`} component={CollectionPageContainer}/>
     </div>

@@ -4,7 +4,7 @@ import './CollectionItem.scss'
 
 const CollectionItem = ({item, addItem}) => {
     const {name, price, imageUrl} = item
-
+    console.log('`/`/`/` addItem: ', addItem)
     return (
         <div className='collection-item'>
             <div className='image' style={{backgroundImage: `url(${imageUrl})`}}/>
