@@ -12,8 +12,23 @@ import {resolvers, typeDefs} from "./graphql/resolvers";
 import {default as data} from './graphql/initialData';
 import AppContainer from "./components/app/AppContainer";
 
+const enhancedFetch = (url, init) => {
+    return fetch(url, {
+        ...init,
+        headers: {
+            ...init.headers,
+            'Access-Control-Allow-Origin': '*',
+        },
+    }).then(response => response)
+}
+
 const httpLink = createHttpLink({
-    uri: 'https://crwn-clothing.com'
+    uri: 'https://crwn-clothing.com',
+    credentials: 'same-origin',
+    fetchOptions: {
+        mode: 'cors',
+    },
+    fetch: enhancedFetch,
 });
 
 const cache = new InMemoryCache();
