@@ -1,6 +1,6 @@
 import React from "react";
-import CheckoutItem from "../../components/checkout-item/CheckoutItem";
 import {StripeCheckoutButton} from "../../components/stripe-button/StripeButton";
+import CheckoutItemContainer from "../../components/checkout-item/CheckoutItemContainer";
 import './CheckoutPage.scss'
 
 const CheckoutPage = ({cartItems, total}) => (
@@ -24,7 +24,7 @@ const CheckoutPage = ({cartItems, total}) => (
             </div>
         </div>
 
-        {cartItems.map(cartItem => <CheckoutItem key={cartItem.id} cartItem={cartItem}/>)}
+        {cartItems.map(cartItem => <CheckoutItemContainer key={cartItem.id} cartItem={cartItem}/>)}
 
         <div className='total'>
             <span>Total: ${total}</span>
