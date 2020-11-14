@@ -45,6 +45,13 @@ Go to [localhost:3000](http://localhost:3000)
 
 ---------------
 
+## [Introduction to Apollo Server](https://www.apollographql.com/docs/apollo-server/)
+## [Hasura](https://hasura.io)
+## [Prisma](https://www.prisma.io/docs/getting-started)
+## [graphql-yoga](https://github.com/prisma-labs/graphql-yoga)
+
+---------------
+
 ## [Redux Persist](https://www.npmjs.com/package/redux-persist)
 
 ``` 
